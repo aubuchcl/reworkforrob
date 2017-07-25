@@ -1,0 +1,64 @@
+* {
+	margin: 1em;
+	font-family: "Source Sans Pro", sans-serif;
+}
+
+.container {
+	display: flex;
+	flex-wrap: wrap;
+	height: auto;
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.box {
+	height: auto;
+	width: 100px;
+	margin: 10px;
+}
+
+.one {
+	order: 1;
+	background-color: red;
+}
+
+.two {
+	order: 2;
+	background-color: green;
+}
+
+.three {
+	background-color: blue;
+}
+
+.logo {
+	order: 1;
+}
+
+.namebox {
+	order: 2;
+	background-color: cornflowerblue;
+	flex-direction: column;
+	text-align: right;
+	flex-grow: 1;
+}
+
+.square {
+	height: 200px;
+	width: 200px;
+}
+
+.projects {
+	flex-direction: row;
+}
+
+header {
+	align-content: flex-start;
+	width: 100%;
+	order: 1;
+}
+
+ul {
+	list-style: none;
+}
