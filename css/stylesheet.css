@@ -52,7 +52,10 @@
 
 .image img {
     max-width:100%;
-    width:initial;
+}
+
+.image .reset-originalsize  {
+     width:initial;
 }
 
 .header_font {
