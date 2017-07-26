@@ -9,6 +9,13 @@
     --desaturate-50: grayscale(50%);
     --blur-1: blur(1px);
     --sepia-50: sepia(50%);
+    --playfair-font: 'Playfair Display', serif;
+    --josefin-font: 'Josefin Sans', sans-serif;
+    --reset-top-padding: 0.8rem 1.5rem;
+}
+
+.reset-top {
+    padding: var(--reset-top-padding);
 }
 
 .bg-red-orange {
@@ -45,14 +52,15 @@
 
 .image img {
     max-width:100%;
+    width:initial;
 }
 
 .header_font {
-   font-family: 'Playfair Display', serif;
+   font-family: var(--playfair-font);
 }
 
 .body_font {
-    font-family: 'Josefin Sans', sans-serif;
+    font-family: var(--josefin-font);
 }
 
 .size_12 {
