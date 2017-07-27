@@ -1,64 +1,88 @@
-* {
-	margin: 1em;
-	font-family: "Source Sans Pro", sans-serif;
+:root {
+    --dark_green: #4C8A7B;
+    --light_green: #B1D8C3;
+    --muddy_green: #99A72C;
+    --orange: #F4AE2C;
+    --red-orange: #F36C59;
+    --light-grey: #C5C6C8;
+    --dark-grey: #AAB1B4;
+    --desaturate-50: grayscale(50%);
+    --blur-1: blur(1px);
+    --sepia-50: sepia(50%);
+    --playfair-font: 'Playfair Display', serif;
+    --josefin-font: 'Josefin Sans', sans-serif;
+    --reset-top-padding: 0.8rem 1.5rem;
 }
 
-.container {
-	display: flex;
-	flex-wrap: wrap;
-	height: auto;
-	width: 100%;
-	margin-left: auto;
-	margin-right: auto;
+.reset-top {
+    padding: var(--reset-top-padding);
 }
 
-.box {
-	height: auto;
-	width: 100px;
-	margin: 10px;
+.bg-red-orange {
+    background: var(--red-orange);
 }
 
-.one {
-	order: 1;
-	background-color: red;
+.bg-light-green {
+    background: var(--light_green);
 }
 
-.two {
-	order: 2;
-	background-color: green;
+.bg-dark_green {
+    background: var(--dark_green);
 }
 
-.three {
-	background-color: blue;
+.bg-orange {
+    background: var(--orange);
 }
 
-.logo {
-	order: 1;
+.bg-light_grey {
+    background: var(--light-grey);
 }
 
-.namebox {
-	order: 2;
-	background-color: cornflowerblue;
-	flex-direction: column;
-	text-align: right;
-	flex-grow: 1;
+.bg-dark_grey {
+    background: var(--dark-grey);
 }
 
-.square {
-	height: 200px;
-	width: 200px;
+.txt-white-smoke {
+    color: whitesmoke;
 }
 
-.projects {
-	flex-direction: row;
+.bg-white-smoke {
+    background: whitesmoke;
 }
 
-header {
-	align-content: flex-start;
-	width: 100%;
-	order: 1;
+.image img {
+    max-width:100%;
 }
 
-ul {
-	list-style: none;
+.image .reset-originalsize  {
+     width:initial;
 }
+
+.header_font {
+   font-family: var(--playfair-font);
+}
+
+.body_font {
+    font-family: var(--josefin-font);
+}
+
+.size_12 {
+    font-size: 1.2rem;
+}
+
+.size_14 {
+    font-size: 1.4rem;
+}
+
+.capitalize {
+    text-transform: uppercase;
+}
+
+.bold {
+    font-weight:bold;
+}
+
+.reduce-contrast {
+    filter: var(--sepia-50) var(--blur-1) var(--desaturate-50);
+}
+
